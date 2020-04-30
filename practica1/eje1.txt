@@ -1,0 +1,5 @@
+frase = input('Ingrese la frase: ')
+
+print(frase)
+
+frase = frase.split
