@@ -24,7 +24,7 @@ listaMetereologica = []
 ok = True
 while ok:
     event, values = window.Read()
-    lista = []
+    #lista = []
     #sg.Print(event)
     #sg.Print(values)
 
@@ -39,8 +39,8 @@ while ok:
             sg.Popup('Falta completar algun campo')
         else:
             datos = (str("Temperatura "+values['Temperatura:']+' *C.'),str("Humedad " +values['Humedad:']+"%"), str(fecha))
-            lista.extend(datos)
-            listaMetereologica.append(str(lista))
+            #lista.extend(datos)
+            listaMetereologica.append(datos)
     elif event == 'Cargar en json':
         escribirArchivo(listaMetereologica)
         archivo.close()
